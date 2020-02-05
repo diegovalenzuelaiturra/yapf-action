@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:3
 
 LABEL "com.github.actions.name"="yapf-formatter"
 LABEL "com.github.actions.description"="Run YAPF formatter for Python codes."
