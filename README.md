@@ -12,7 +12,7 @@ workflow "Example Workflow" {
 }
 
 action "Formatter" {
-  uses = "diegovalenzuelaiturra/black-action@master"
+  uses = "diegovalenzuelaiturra/yapf-action@master"
   args = ". --diff --in-place"
 }
 ```
