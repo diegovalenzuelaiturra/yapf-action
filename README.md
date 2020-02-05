@@ -1,5 +1,4 @@
 # YAPF Code Formatter GitHub Action
-A YAPF formatter GitHub action
 
 A GitHub action that runs [YAPF code formatter](https://github.com/google/yapf) for Python.
 
