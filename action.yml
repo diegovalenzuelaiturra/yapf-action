@@ -1,0 +1,6 @@
+name: "Formatter"
+description: 'Runs YAPF code formatter for Python.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  
