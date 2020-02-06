@@ -2,7 +2,7 @@
 name: "YAPF Formatter"
 description: "Runs YAPF code formatter for Python."
 inputs:
-  args:
+  args: # id of input
     description: "yapf args"
     required: true
     default: . --diff --in-place
