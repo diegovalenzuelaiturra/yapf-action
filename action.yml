@@ -1,7 +1,11 @@
-name: "Formatter"
+# action.yml
+name: "YAPF Formatter"
 description: "Runs YAPF code formatter for Python."
 inputs:
-  args: "yapf args"
+  args:
+    description: "yapf args"
+    required: true
+    default: . --diff --in-place
   
 runs:
   using: "docker"
