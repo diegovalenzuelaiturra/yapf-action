@@ -1,4 +1,4 @@
 #!/bin/sh -l
 set -e
-echo $*
+echo "Entrypoint got the following args : $*"
 sh -c "yapf $*"
