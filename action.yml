@@ -1,6 +1,11 @@
 name: "Formatter"
-description: 'Runs YAPF code formatter for Python.'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
+description: "Runs YAPF code formatter for Python."
+inputs:
+  args: "yapf args"
   
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    -${{ inputs.args }}
+ 
