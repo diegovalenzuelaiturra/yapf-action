@@ -5,7 +5,7 @@ inputs:
   args: # id of input
     description: "yapf args"
     required: true
-    default: . --in-place --recursive
+    default: . --verbose --recursive
   
 runs:
   using: "docker"
