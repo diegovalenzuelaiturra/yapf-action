@@ -5,7 +5,7 @@ inputs:
   args: # id of input
     description: "yapf args"
     required: true
-    default: . --diff --in-place
+    default: . --diff
   
 runs:
   using: "docker"
