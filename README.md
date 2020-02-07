@@ -2,6 +2,9 @@
 
 A GitHub action that runs [YAPF code formatter](https://github.com/google/yapf) for Python.
 
+It will automatically commit the changes!
+
+
 ## Example Workflow
 
 On your repo, create a folder called `.github/workflows/` containing a `main.yml` file, with the following workflow configurations :
@@ -50,5 +53,12 @@ jobs:
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
+
+If you want to edit the message it will automatically commit to your repository when pushing the changes, edit the following command of the worflow to include your own custom message:
+
+```
+git commit -m "Automated Formatter Push" -a | exit 0
+```
   
   For a full list of possible args checkout the [YAPF docs](https://github.com/google/yapf#Usage).
+  
