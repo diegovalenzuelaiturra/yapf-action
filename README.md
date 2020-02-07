@@ -34,7 +34,7 @@ jobs:
     - name: "Formatter Action"
       # This step uses diegovalenzuelaiturra's yapf-action:
       #   https://github.com/diegovalenzuelaiturra/yapf-action
-      uses: diegovalenzuelaiturra/yapf-action@master
+      uses: diegovalenzuelaiturra/yapf-action@v0.0.1
       with:
         args: . --verbose --recursive --in-place
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
