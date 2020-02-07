@@ -5,7 +5,7 @@ A GitHub action that runs [YAPF code formatter](https://github.com/google/yapf) 
 ## Example Workflow
 
 ```workflow
-name: YAPF Code Formatter
+name: YAPF Code Formatter :)
 
 # This workflow is triggered on pushes to the repository.
 on:
@@ -29,7 +29,22 @@ jobs:
       #   https://github.com/diegovalenzuelaiturra/yapf-action
       uses: diegovalenzuelaiturra/yapf-action@master
       with:
-        args: . --verbose --recursive
+        args: . --verbose --recursive --in-place
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Commit files
+      run: |
+        echo ${{ github.ref }}
+        git add .
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Automated Formatter Push" -a | exit 0
+        
+    - name: Push changes
+      if: github.ref == 'refs/heads/master'
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
 ```
 
