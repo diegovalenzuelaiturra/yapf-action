@@ -1,8 +1,14 @@
 # action.yml
 name: "YAPF Formatter"
+
 description: "Runs YAPF code formatter for Python."
+
 inputs:
   args: # id of input
     description: "yapf args"
     required: true
-    default: . --verbose --recursive
+    default: . --verbose --recursive --in-place
+  
+runs:
+  using: "docker"
+  image: "Dockerfile"
