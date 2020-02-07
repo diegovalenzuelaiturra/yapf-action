@@ -6,7 +6,3 @@ inputs:
     description: "yapf args"
     required: true
     default: . --verbose --recursive
-  
-runs:
-  using: "docker"
-  image: "Dockerfile"
