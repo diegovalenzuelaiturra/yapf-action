@@ -1,3 +1,4 @@
+```workflow
 name: YAPF Code Formatter :)
 
 # This workflow is triggered on pushes or pull requests
@@ -40,3 +41,5 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+```
+  
