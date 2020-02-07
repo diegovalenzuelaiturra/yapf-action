@@ -1,18 +1,13 @@
-# YAPF Code Formatter GitHub Action
-
-A GitHub action that runs [YAPF code formatter](https://github.com/google/yapf) for Python.
-
-## Example Workflow
-
-```workflow
 name: YAPF Code Formatter :)
 
-# This workflow is triggered on pushes to the repository.
+# This workflow is triggered on pushes or pull requests
+# to the master branch.
 on:
-  push:
+  
+  push: 
     paths:
-    - '**.py'
-
+      - '**.py'
+      
 jobs:
   build:
     
@@ -45,7 +40,3 @@ jobs:
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-
-```
-
-For a full list of possible `args` checkout the [YAPF docs](https://github.com/google/yapf#usage).
