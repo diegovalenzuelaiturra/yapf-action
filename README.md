@@ -1,3 +1,9 @@
+# YAPF Code Formatter GitHub Action
+
+A GitHub action that runs [YAPF code formatter](https://github.com/google/yapf) for Python.
+
+## Example Workflow
+
 ```workflow
 name: YAPF Code Formatter :)
 
@@ -42,3 +48,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 ```
   
+  For a full list of possible args checkout the [YAPF docs](https://github.com/google/yapf#Usage).
