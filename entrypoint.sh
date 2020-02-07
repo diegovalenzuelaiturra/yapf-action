@@ -1,4 +1,10 @@
-#!/bin/sh -l
+#!/bin/bash
 set -e
+
+echo $(pwd)
+
+echo $(ls)
+
 echo "Entrypoint got the following args : $*"
-sh -c "yapf $*"
+
+bash -c "yapf $*"
