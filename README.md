@@ -1,8 +1,7 @@
 ```workflow
 name: YAPF Code Formatter :)
 
-# This workflow is triggered on pushes or pull requests
-# to the master branch.
+# This workflow is triggered on pushes
 on:
   
   push: 
