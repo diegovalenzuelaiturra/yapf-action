@@ -4,6 +4,9 @@ A GitHub action that runs [YAPF code formatter](https://github.com/google/yapf) 
 
 ## Example Workflow
 
+On your repo, create a folder called `.github/workflows/` containing a `main.yml` file, with the following workflow configurations :
+
+
 ```workflow
 name: YAPF Code Formatter :)
 
