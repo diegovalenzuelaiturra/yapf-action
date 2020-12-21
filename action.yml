@@ -7,12 +7,12 @@ inputs:
   args: # id of input
     description: "yapf args"
     required: true
-    default: . --verbose --recursive --in-place
-  
+    default: . --verbose --parallel --recursive --in-place
+
 runs:
   using: "docker"
   image: "Dockerfile"
 
 branding:
-  icon: 'award'  
-  color: 'orange'
+  icon: "check-circle"
+  color: "gray-dark"
