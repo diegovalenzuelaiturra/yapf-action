@@ -1,0 +1,7 @@
+from collections import Counter
+from typing import Dict,List,Tuple
+n:int=2
+items:Dict[str, int]={"a":5,"b":3,"c":7,"d":0,"e":1,"f":2,"g":3,"h":0}
+expected_most_commons:List[Tuple[str,int]]=[("c",7),("a",5)]
+x:Counter=Counter(items)
+assert x.most_common(n=n)==expected_most_commons,("there is a mismatch between the counter and the" "expected most common items")
