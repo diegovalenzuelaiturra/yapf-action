@@ -4,11 +4,11 @@ A [GitHub action](https://github.com/diegovalenzuelaiturra/yapf-action) that run
 
 It will automatically commit the changes!
 
-An example workflow can be found at `.github/workflows/main.yml`
+An example workflow can be found at `.github/workflows/yapf.yml`
 
 ## Example Workflow
 
-On your repo, create a folder called `.github/workflows/` containing a `main.yml` file, with the following workflow configurations :
+On your repo, create a folder called `.github/workflows/` containing a `yapf.yml` file, with the following workflow configurations :
 
 ```yaml
 name: YAPF Formatter
