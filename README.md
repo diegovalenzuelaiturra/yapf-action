@@ -4,7 +4,7 @@ A [GitHub action](https://github.com/diegovalenzuelaiturra/yapf-action) that run
 
 It will automatically commit the changes!
 
-An example worflow can be found at `.github/workflows/main.yml`
+An example workflow can be found at `.github/workflows/main.yml`
 
 ## Example Workflow
 
@@ -37,16 +37,6 @@ jobs:
           args: . --verbose --recursive --in-place --parallel
 
       - name: action metadata
-        # github.action     : the name of the action currently running.
-        # github.actor      : the login of the user that initiated the workflow run.
-        # github.event_name : The name of the event that triggered the workflow run.
-        # github.job        : The job_id of the current job.
-        # github.ref        : The branch or tag ref that triggered the workflow run.
-        # github.repository : The owner and repository name.
-        # github.run_id     : A unique number for each run within a repository. This number does not change if you re-run the workflow run.
-        # github.sha        : The commit SHA that triggered the workflow run.
-        # github.workflow   : The name of the workflow. If the workflow file doesn't specify a name, the value of this property is the full path of the workflow file in the repository.
-        # github.workspace  : The default working directory for steps and the default location of your repository when using the checkout action.
         run: |
           echo -e "action     : ${{ github.action }}"
           echo -e "actor      : ${{ github.actor }}"
@@ -86,3 +76,27 @@ git commit -m "Automation: YAPF Formatter" --all | exit 0
 ```
 
 For a full list of possible args checkout the [YAPF docs](https://github.com/google/yapf#Usage).
+
+---
+
+```yaml
+# github.action     : the name of the action currently running.
+
+# github.actor      : the login of the user that initiated the workflow run.
+
+# github.event_name : The name of the event that triggered the workflow run.
+
+# github.job        : The job_id of the current job.
+
+# github.ref        : The branch or tag ref that triggered the workflow run.
+
+# github.repository : The owner and repository name.
+
+# github.run_id     : A unique number for each run within a repository. This number does not change if you re-run the workflow run.
+
+# github.sha        : The commit SHA that triggered the workflow run.
+
+# github.workflow   : The name of the workflow. If the workflow file doesn't specify a name, the value of this property is the full path of the workflow file in the repository.
+
+# github.workspace  : The default working directory for steps and the default location of your repository when using the checkout action.
+```

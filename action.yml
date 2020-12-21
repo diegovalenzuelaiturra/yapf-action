@@ -1,7 +1,6 @@
-# action.yml
 name: "YAPF Formatter"
-
 description: "Runs YAPF code formatter for Python."
+author: Diego Valenzuela Iturra
 
 inputs:
   args: # id of input

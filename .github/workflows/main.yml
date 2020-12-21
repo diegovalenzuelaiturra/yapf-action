@@ -9,7 +9,7 @@ name: YAPF Formatter
 #      https://docs.github.com/en/free-pro-team@latest/actions/reference/context-and-expression-syntax-for-github-actions
 
 # *TODO : Add a more informative commit message using variable interpolations
-# *TODO : check if we could pass --exclude argument to YAPF
+# *TODO : check if we could pass --exclude argument to YAPF, like e.g. --exclude '**/tests/**'
 
 # * NOTE : exit 0 : exit code 0 means 'success'
 
