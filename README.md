@@ -43,7 +43,7 @@ jobs:
           echo -e "event_name : ${{ github.event_name }}"
           echo -e "job        : ${{ github.job }}"
           echo -e "ref        : ${{ github.ref }}"
-          echo -e" repository : ${{ github.repository }}"
+          echo -e "repository : ${{ github.repository }}"
           echo -e "run_id     : ${{ github.run_id }}"
           echo -e "sha        : ${{ github.sha }}"
           echo -e "workflow   : ${{ github.workflow }}"
